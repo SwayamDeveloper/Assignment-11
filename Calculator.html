@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Document</title>
+</head>
+
+<div class="container">
+    <h1>Calculator</h1>
+    <table>
+
+        <input type="text" name="screen" id="screen" value="" placeholder="0"></input>
+
+        <tr>
+            <td><button onclick="perform('+')">+</button></td>
+            <td><button onclick="perform('-')">-</button></td>
+            <td><button onclick="perform('*')">x</button></td>
+            <td><button onclick="perform('/')">/</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="perform('7')">7</button></td>
+            <td><button onclick="perform('8')">8</button></td>
+            <td><button onclick="perform('9')">9</button></td>
+            <td rowspan="4"><button class="t" onclick=evaluateFun()>=</button></td>
+        </tr>
+
+        <tr>
+            <td><button onclick="perform('4')">4</button></td>
+            <td><button onclick="perform('5')">5</button></td>
+            <td><button onclick="perform('6')">6</button></td>
+            <!-- <td><button></button></td> -->
+        </tr>
+
+        <tr>
+            <td><button onclick="perform('1')">1</button></td>
+            <td><button onclick="perform('2')">2</button></td>
+            <td><button onclick="perform('3')">3</button></td>
+            <!-- <td><button></button></td> -->
+        </tr>
+
+        <tr>
+            <td><button onclick="perform('0')">0</button></td>
+            <td><button onclick="perform('.')">.</button></td>
+            <td><button onclick=clearInputBox()>C</button></td>
+            <!-- <td><button>=</button></td> -->
+        </tr>
+
+    </table>
+
+</div>
+<script src="index.js"></script>
+</body>
+
+</html>
